@@ -1,0 +1,367 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.button {
+  border: 1px solid white;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 2.5rem;
+  line-height: 2rem;
+  padding-top: 5px;
+  color: white;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.underline {
+  height: 2px;
+  background-color: lightseagreen;
+  width: 10%;
+}
+
+.imageBox {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+
+.imageSection {
+  margin: 0 auto;
+  padding-right: 5px;
+}
+
+.guitar {
+  width: 100%;
+  background: repeating-linear-gradient(-55deg, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75) 2px, #292929 2px, #292929 4px), url(../images/main-banner.jpg) no-repeat   bottom center;
+  background-size: cover;
+  position: relative;
+  .container {
+    .guitarHead {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: nowrap;
+      .logo {
+        padding-top: 10px;
+        background: url("../images/logo.png") no-repeat left;
+        height: 21px;
+        width: 100%;
+        margin: 0 0 0 15px;
+      }
+      .textHead {
+        width: 75%;
+        font-size: 1rem;
+        font-weight: 900;
+        color: #666;
+        display: flex;
+        justify-content: space-between;
+        span {
+          &:first-child {
+            color: lightseagreen;
+          }
+        }
+      }
+    }
+    .guitarBody {
+      flex-direction: column;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      img {
+        margin: 0 0 25px 0;
+      }
+      #guitarBodyText {
+        text-align: center;
+        width: 30%;
+        font-size: 1.25rem;
+        color: white;
+      }
+      #guitarBodyButton {
+        margin: 15px 0 150px 0;
+        background: rgba(100, 100, 100, 0.5);
+        width: 20%;
+      }
+    }
+  }
+  .bulge {
+    background: url("../images/banner-bottom.svg") no-repeat center;
+    background-size: contain;
+    height: 51px;
+    width: 100vw;
+    position: absolute;
+    bottom: -1px;
+    &:before, &:after {
+      width: calc(50vw - 120px);
+      height: 51px;
+      content: " ";
+      position: absolute;
+      background-color: white;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+    }
+  }
+}
+
+.learn {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+  .container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    .imageBox {
+      text-align: left;
+      .imageSection {
+        .image {
+          height: 300px;
+          width: 500px;
+          background-size: contain;
+          margin: 25px 25px 0 0;
+        }
+        #img1 {
+          background: url("../images/img2.png") no-repeat center;
+        }
+        #img2 {
+          background: url("../images/img1.png") no-repeat center;
+        }
+        #img3 {
+          background: url("../images/img3.png") no-repeat center;
+        }
+        .learnButton1 {
+          background-color: lightseagreen;
+          width: 33%;
+        }
+        .learnButton2 {
+          background-color: #666;
+          width: 33%;
+        }
+      }
+    }
+  }
+}
+
+.mixer {
+  height: 400px;
+  width: 100%;
+  background: url("../images/banner-paralax.jpg") no-repeat center center;
+  background-size: cover;
+  filter: brightness(75%);
+  color: white;
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    .bannerHead {
+      font-size: 4.5rem;
+      font-weight: 100;
+      letter-spacing: 0.25rem;
+      span {
+        color: lightseagreen;
+      }
+    }
+    .bannerText {
+      margin: 25px 0;
+      width: 30%;
+    }
+  }
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  background-color: #eee;
+  padding-bottom: 50px;
+  .container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    .imageBox {
+      text-align: center;
+      .imageSection {
+        .imageTeam {
+          height: 200px;
+          width: 200px;
+          background-size: contain;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+        #teamImg1 {
+          background: url("../images/photo1.png") no-repeat center;
+          &:hover {
+            background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(200, 200, 200, 0.5)), url("../images/photo1.png") no-repeat center;
+          }
+        }
+        #teamImg2 {
+          background: url("../images/photo2.png") no-repeat center;
+          &:hover {
+            background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(200, 200, 200, 0.5)), url("../images/photo2.png") no-repeat center;
+          }
+        }
+        #teamImg3 {
+          background: url("../images/photo3.png") no-repeat center;
+          &:hover {
+            background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(200, 200, 200, 0.5)), url("../images/photo3.png") no-repeat center;
+          }
+        }
+        #teamImg4 {
+          background: url("../images/photo4.png") no-repeat center;
+          &:hover {
+            background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(200, 200, 200, 0.5)), url("../images/photo4.png") no-repeat center;
+          }
+        }
+        .teamButton1 {
+          background-color: #666;
+          width: 50%;
+          margin: 0 auto;
+        }
+        .teamButton2 {
+          background-color: lightseagreen;
+          width: 50%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 50px;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    .contactText {
+      width: 90%;
+    }
+    form {
+      align-items: flex-start;
+      font-family: 'Nunito Sans', sans-serif;
+      input {
+        &:not(.button) {
+          line-height: 2.5rem;
+          border: 1px solid black;
+          border-radius: 10px;
+          margin: 0 0 15px 0;
+          padding: 0 0 0 10px;
+          &:hover {
+            border: 2px solid black;
+          }
+        }
+      }
+      textarea {
+        line-height: 2.5rem;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 0 0 15px 0;
+        padding: 0 0 0 10px;
+        &:hover {
+          border: 2px solid black;
+        }
+      }
+      .contactButton {
+        width: 20%;
+        font-weight: 900;
+        background-color: #292929;
+        border: 1px solid #292929;
+        padding: 5px 0 5px 0;
+      }
+      label {
+        font-family: 'Nunito Sans', sans-serif;
+        padding: 0 15px 0 0;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.map {
+  height: 400px;
+  width: 100%;
+  background: url("../images/map.jpg") no-repeat center center;
+  background-size: cover;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  .marker {
+    position: absolute;
+    top: 24%;
+    left: 35%;
+    background: url("../images/marker.png") no-repeat center center;
+    height: 155px;
+    width: 155px;
+  }
+}
+
+footer {
+  background-color: #292929;
+  color: white;
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
+    flex-direction: row;
+    .footerBox {
+      flex-direction: column;
+      font-weight: 900;
+      margin: 50px 25px 50px 0;
+      font-size: 0.75rem;
+      &:not(.box2) {
+        p {
+          &:nth-child(2) {
+            color: lightseagreen;
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+}
